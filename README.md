@@ -1,7 +1,7 @@
 #NAME
 
 Find-Pi-by-random - Find Pi by random shots
- 
+
 
 #SYNOPSIS
 
@@ -20,16 +20,16 @@ This program was test from interview to Прогрэдис, Russian IT company. 
 #OPTIONS
 
    -r=*INT*
-   
+
 Set circle size
 
    -shots=_INT_
-   
+
 Set shots count
 
 # SAMPLE OUTPUT
-      Radius	= 10000000
-      Shots		= 10000000
-      Pi		= 3.141492
-      Accuracy	= 0.999968
-      Time		= 779.1206ms
+    Radius   = 10000000
+    Shots    = 10000000
+    Pi       = 3.141492
+    Accuracy = 0.999968
+    Time     = 779.1206ms
