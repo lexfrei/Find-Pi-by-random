@@ -32,4 +32,4 @@ Set shots count
       Shots		= 10000000
       Pi		= 3.141492
       Accurac	= 0.999968
-      Tim		= 779.1206ms
+      Time		= 779.1206ms
