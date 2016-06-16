@@ -34,8 +34,8 @@ var r int
 var scan int
 
 func init() {
-	flag.IntVar(&r, "r", 1000000, "Set the circle size")
-	flag.IntVar(&scan, "shots", 1000000, "How many shots will be done")
+	flag.IntVar(&r, "r", 10000000, "Set the circle size")
+	flag.IntVar(&scan, "shots", 10000000, "How many shots will be done")
 	flag.Parse()
 	fmt.Print("Radius\t = ", r, "\n")
 	fmt.Print("Shots\t = ", scan, "\n")
@@ -53,12 +53,15 @@ func PointInCircle(x, y, x0, y0, R int) bool {
 func main() {
 	rand.Seed(time.Now().Unix())
 	inS := 0
+	start := time.Now()
 	for i := 0; i < scan; i++ {
 		if PointInCircle(random(-r, r), random(-r, r), 0, 0, r) {
 			inS++
 		}
 	}
+	elapsed := time.Since(start)
 	pi := float32(inS) * 4 / float32(r) * float32(r) / float32(scan)
 	fmt.Printf("Pi\t = %f\n", pi)
 	fmt.Printf("Accuracy = %f\n", 1-math.Abs(float64(pi)-realPi)/realPi)
+	fmt.Print("Time\t = ", elapsed, "\n")
 }
