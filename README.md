@@ -31,5 +31,5 @@ Set shots count
       Radius	= 10000000
       Shots		= 10000000
       Pi		= 3.141492
-      Accurac	= 0.999968
+      Accuracy	= 0.999968
       Time		= 779.1206ms
