@@ -26,3 +26,10 @@ Set circle size
    -shots=_INT_
    
 Set shots count
+
+# SAMPLE OUTPUT
+      Radius	= 10000000
+      Shots		= 10000000
+      Pi		= 3.141492
+      Accurac	= 0.999968
+      Tim		= 779.1206ms
