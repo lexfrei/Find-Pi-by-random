@@ -23,19 +23,22 @@ package main
 import (
 	"flag"
 	"fmt"
+	"math"
 	"math/rand"
 	"time"
 )
+
+const realPi float64 = 3.14159265358979323846
 
 var r int
 var scan int
 
 func init() {
-	flag.IntVar(&r, "r", 10000, "Set the circle size")
-	flag.IntVar(&scan, "shots", 10000, "How many shots will be done")
+	flag.IntVar(&r, "r", 1000000, "Set the circle size")
+	flag.IntVar(&scan, "shots", 1000000, "How many shots will be done")
 	flag.Parse()
-	fmt.Print("Radius\t= ", r, "\n")
-	fmt.Print("Shots\t= ", scan, "\n")
+	fmt.Print("Radius\t = ", r, "\n")
+	fmt.Print("Shots\t = ", scan, "\n")
 }
 
 func random(min, max int) int {
@@ -56,5 +59,6 @@ func main() {
 		}
 	}
 	pi := float32(inS) * 4 / float32(r) * float32(r) / float32(scan)
-	fmt.Printf("Pi\t= %f\n", float32(pi))
+	fmt.Printf("Pi\t = %f\n", pi)
+	fmt.Printf("Accuracy = %f\n", 1-math.Abs(float64(pi)-realPi)/realPi)
 }
