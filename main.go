@@ -42,7 +42,7 @@ func random(min, max int) int {
 	return rand.Intn(max-min) + min
 }
 
-//PointInCircle проверяет, есть ли жизнь на марсе
+//PointInCircle check the point in x,y belonging to the circumference with center in x0, y0 and r=R
 func PointInCircle(x, y, x0, y0, R int) bool {
 	return (x-x0)*(x-x0)+(y-y0)*(y-y0) <= R*R
 }
