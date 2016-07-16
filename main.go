@@ -32,6 +32,7 @@ var r int
 var scan int
 
 func init() {
+	rand.Seed(time.Now().Unix())
 	flag.IntVar(&r, "r", 10000000, "Set the circle size")
 	flag.IntVar(&scan, "shots", 10000000, "How many shots will be done")
 	flag.Parse()
@@ -49,7 +50,6 @@ func PointInCircle(x, y, x0, y0, R int) bool {
 }
 
 func main() {
-	rand.Seed(time.Now().Unix())
 	inS := 0
 	start := time.Now()
 	for i := 0; i < scan; i++ {
