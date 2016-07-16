@@ -28,6 +28,8 @@ import (
 	"time"
 )
 
+const realPi float64 = 3.14159265358979323846
+
 var r int
 var scan int
 
@@ -60,6 +62,6 @@ func main() {
 	elapsed := time.Since(start)
 	pi := float32(inS) * 4 / float32(r) * float32(r) / float32(scan)
 	fmt.Printf("Pi\t = %f\n", pi)
-	fmt.Printf("Accuracy = %f\n", 1-math.Abs(float64(pi)-math.Pi)/math.Pi)
+	fmt.Printf("Accuracy = %f\n", 1-math.Abs(float64(pi)-realPi)/realPi)
 	fmt.Print("Time\t = ", elapsed, "\n")
 }
