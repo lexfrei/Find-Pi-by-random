@@ -16,6 +16,10 @@
 // -shots=INT
 //   set shots count
 //
+// The MIT License (MIT)
+//
+// Copyright (c) 2016 lexfrei
+//
 //************************************************************************//
 
 package main
