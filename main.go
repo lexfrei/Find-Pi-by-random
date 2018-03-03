@@ -48,16 +48,15 @@ func random(min, max int) int {
 	return rand.Intn(max-min) + min
 }
 
-//PointInCircle check the point in x,y belonging to the circumference with center in x0, y0 and r=R
-func PointInCircle(x, y, x0, y0, R int) bool {
-	return (x-x0)*(x-x0)+(y-y0)*(y-y0) <= R*R
+func pointInCircle(x, y, x0, y0, r int) bool {
+	return (x-x0)*(x-x0)+(y-y0)*(y-y0) <= r*r
 }
 
 func main() {
 	inS := 0
 	start := time.Now()
 	for i := 0; i < scan; i++ {
-		if PointInCircle(random(-r, r), random(-r, r), 0, 0, r) {
+		if pointInCircle(random(-r, r), random(-r, r), 0, 0, r) {
 			inS++
 		}
 	}
