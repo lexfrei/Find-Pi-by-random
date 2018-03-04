@@ -1,4 +1,6 @@
 # NAME
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flexfrei%2FFind-Pi-by-random.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Flexfrei%2FFind-Pi-by-random?ref=badge_shield)
+
 
 Find-Pi-by-random - Find Pi by random shots
 
@@ -33,3 +35,7 @@ Set shots count
     Pi       = 3.141492
     Accuracy = 0.999968
     Time     = 779.1206ms
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flexfrei%2FFind-Pi-by-random.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Flexfrei%2FFind-Pi-by-random?ref=badge_large)
